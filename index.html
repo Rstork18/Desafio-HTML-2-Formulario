@@ -5,111 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Formulário</title>
 </head>
 
 <body>
-    <fieldset>
+
+    <form action="test.php" method="post" enctype="multipart/form-data">
         <legend>Cadastro</legend>
-        <form action="test.php" method="post" enctype="multipart/form-data">
+        <!-- name -->
 
-            <!-- nome -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required placeholder="Digite seu Nome">
 
-            <label for="Nome">Nome:</label> <br>
-            <input type="text" id="nome" name="nome" required>
-            <br><br>
 
-            <!-- email -->
+        <!-- email -->
 
-            <label for="Email">Email:</label>
-            <br>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+        <label for="Email">Email:</label>
 
-            <!-- idade -->
+        <input type="email" id="email" name="email" required placeholder="Digite seu Email">
 
-            <label for="Idade">Idade:</label>
-            <br>
-            <input type="number" minlength="12" id="Idade" name="Idade" required>
-            <br><br>
 
-            <!-- nascimento -->
+        <!-- age -->
 
-            <label for="data">Data de nascimento:</label>
-            <br>
-            <input type="date" id="data" name="data" required>
-            <br><br>
+        <label for="age">Idade:</label>
 
-            <!-- Contas -->
+        <input type="number" minlength="12" id="age" name="age" required placeholder="Digite sua Idade">
 
+
+        <!-- birthday  -->
+
+        <label for="date">Data de nascimento:</label>
+
+        <input type="date" id="data" name="date" required>
+
+
+        <!-- social -->
+
+        <div class="social">
             <label>Onde você possui contas:</label>
-            <br>
+
             <input type="checkbox" id="Instagram" name="insta"> Instagram
             <input type="checkbox" id="Facebook" name="face"> Facebook
             <input type="checkbox" id="Youtube" name="youtube"> Youtube
-            <br><br>
 
-            <!-- Sexo -->
+        </div>
 
-            <label for="Sexo">Sexo:</label>
-            <br>
+        <!-- genre -->
+
+        <div class="genre">
+            <label for="Sexy">Gênero:</label>
+
             <input type="radio" name="1" id="Masculino" value="masculino"> Masculino
             <input type="radio" name="1" id="Feminino" value="feminino"> Feminino
-            <br><br>
 
-            <!-- cor dos olhos -->
+        </div>
 
-            <label for="cor-dos-Olhos">Cor dos Olhos:</label>
-            <input type="color" name="cor-dos-Olhos" required>
-            <br><br>
+        <!-- eye colors -->
 
-            <!-- Biografia -->
+        <label for="eye-colors">Cor dos seus olhos:</label>
+        <input type="color" name="eye-colors" required>
 
-            <label for="Bio">Biografia:</label>
-            <br>
-            <textarea id="Bio" name="Bio" rows="5" cols="33"> </textarea>
-            <br><br>
 
-            <!-- Foto de perfil -->
+        <!-- biography-->
 
-            <label for="Foto"> Foto de perfil:</label>
-            <br>
-            <input type="file" accept="images/*" id="Foto" name="foto">
-            <br><br>
+        <label for="Bio">Biografia:</label>
 
-            <!-- Telefone -->
+        <textarea id="Bio" name="Bio" rows="5" cols="33"> </textarea>
 
-            <label for="Tel"> Telefone: </label>
-            <br>
-            <input type="tel" id="Tel" name="tel" required>
-            <br><br>
 
-            <!-- Link Facebook -->
+        <!-- photo -->
 
-            <label for="link"> Link Do Perfil do Facebook:</label>
-            <br>
-            <input type="url" id="link" name="link">
-            <br><br>
+        <label for="photo"> foto de perfil:</label>
 
-            <!-- Senha -->
+        <input type="file" accept="images/*" id="photo" name="foto">
 
-            <label for="senha"> Senha:</label>
-            <br>
-            <input type="password" id="senha" name="senha" minlength="6" maxlength="8" required>
-            <br><br>
 
-            <!-- button limpar -->
+        <!-- phone -->
 
-            <label for="limpar"></label>
-            <br>
-            <input type="reset" id="limpar" name="limpar">
+        <label for="phone"> Telefone: </label>
 
-            <!-- Enviar dados -->
+        <input type="tel" id="phone" name="phone" required placeholder="Digite o seu telefone">
 
-            <label for="enviar-dados"></label>
-            <input type="submit" id="enviar-dados" name="enviar-dados">
-        </form>
-    </fieldset>
+
+        <!-- facebook link -->
+
+        <label for="link"> Link Do Perfil do Facebook:</label>
+
+        <input type="url" id="link" name="link" placeholder="Coloque seu link">
+
+
+        <!-- password -->
+
+        <label for="password"> Senha:</label>
+
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" minlength="6" maxlength="8" required>
+
+
+        <!-- buttons -->
+        <div class="btns">
+
+            <button type="reset" id="reset" name="reset">Limpar</button>
+            <button type="submit" id="send" name="send"> Enviar dados</button>
+
+        </div>
+
+    </form>
+
 
 </body>
 
