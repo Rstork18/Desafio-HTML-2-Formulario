@@ -1,0 +1,64 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0px;
+}
+
+body {
+    margin: 10px;
+    border-style: double;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+}
+
+legend {
+    font-size: 30px;
+    text-align: center;
+    color: #202021;
+}
+
+label {
+    font-size: 20px;
+    color: #27313B;
+    display: block;
+    margin-left: 10px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    background-color: #696B6E;
+    color: white;
+    margin: 0px 0px 15px 10px;
+    border-color: black;
+}
+
+.btns {
+    margin: 10px;
+}
+
+#reset {
+    border-radius: 5px;
+    border-color: black;
+}
+
+#send {
+    border-radius: 5px;
+    border-color: black;
+}
+
+#reset:hover {
+    background-color: #696B6E;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+#send:hover {
+    background-color: #696B6E;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
